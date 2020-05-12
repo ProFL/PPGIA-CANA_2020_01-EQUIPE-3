@@ -1,5 +1,21 @@
 # Otimização da Aquisição de Contratos do Mercado Livre de Energia
 
+<!-- TOC -->
+
+- [Otimização da Aquisição de Contratos do Mercado Livre de Energia](#otimização-da-aquisição-de-contratos-do-mercado-livre-de-energia)
+  - [Objetivos](#objetivos)
+  - [Contextualização](#contextualização)
+    - [Fonte](#fonte)
+    - [Geração de Energia Solar](#geração-de-energia-solar)
+    - [Mercado Livre de Energia](#mercado-livre-de-energia)
+  - [Problematização](#problematização)
+  - [Entrada de Dados](#entrada-de-dados)
+  - [Exemplo de Entrada de Dados](#exemplo-de-entrada-de-dados)
+  - [Exemplos de Soluções Viáveis (não necessariamente econômicas)](#exemplos-de-soluções-viáveis-não-necessariamente-econômicas)
+  - [Atividades da 1a entrega](#atividades-da-1a-entrega)
+
+<!-- /TOC -->
+
 ## Objetivos
 
 Neste projeto, abordamos o Problema de Aquisição de Contratos do Mercado Livre de Energia, um
@@ -13,9 +29,9 @@ empregando diferentes estratégias de resolução de problemas para tratar situa
 
 ### Fonte
 
-https://blog.bluesol.com.br/fazenda-solar/
+<https://blog.bluesol.com.br/fazenda-solar/>
 
-https://www.portalsolar.com.br/como-vender-energia-solar
+<https://www.portalsolar.com.br/como-vender-energia-solar>
 
 ### Geração de Energia Solar
 
@@ -25,12 +41,10 @@ fazenda solar. Com a alta aplicabilidade da tecnologia fotovoltaica e a oferta d
 qualquer pessoa ou empresa pode gerar a sua energia e utilizá-la para diversos fins, seja economizar na
 conta de luz, seja revendê-la.
 
-
 No Brasil, enquanto o número de pessoas gerando energia em suas casas para desconto na conta de luz
 sobe ano a ano, projetos de usinas solares também começam a ganhar ritmo e se espalham pelo país,
 principalmente no Nordeste. Devido às últimas regulamentações do segmento de geração distribuída,
 criou-se um novo modelo de comercialização de energia elétrica gerada por placas solares.
-
 
 Vale ainda ressaltar que fazendas solares ganharam destaque devido ao uso de tecnologias de ponta e por
 deixarem 100% limpo o sistema elétrico de comunidades inteiras, tornando-se exemplo de
@@ -44,13 +58,11 @@ entre produtores e geradores, tornando os custos para compra de energia elétric
 modelo de contratação, o consumidor pode escolher seu fornecedor de energia de acordo com o SIN
 (Sistema Interligado Nacional) e negociar seus preços, preferências e conveniências.
 
-
 Na verdade, os consumidores do mercado livre podem adquirir energia diretamente das fontes geradoras,
 como hidrelétricas e termelétricas, ou das comercializadoras, como concessionárias e permissionárias,
 através de contratos pelos quais são negociados o valor da tarifa, o prazo e o volume. Assim, esses
 consumidores podem pagar duas ou mais contas de energia, sendo uma pela distribuição (devida à
 distribuidora local) e as outras pelo valor da energia que comprou dos diferentes fornecedores.
-
 
 O mercado livre conta assim com diversas vantagens, tais como poder de escolha entre diferentes opções
 de fornecedores, flexibilidade de escolha entre fontes de energia do SIN, concorrência que estimula a
@@ -68,9 +80,8 @@ taxa t, paga à companhia de distribuição de energia, a cada mudança de forne
 o consumo da empresa não varia ao longo dos meses. Assim, um contrato pode ser caracterizado por um
 fornecedor, um mês de início do fornecimento, um mês de fim do fornecimento e o valor do contrato.
 Como exemplo, o contrato <1; 1; 5; 10.0> refere-se a um contrato do fornecedor 1 que se compromete a
-fornecer energia durante os meses de 1 a 5 com um valor total de $10,0. Para um mesmo fornecedor, os
+fornecer energia durante os meses de 1 a 5 com um valor total de \$10,0. Para um mesmo fornecedor, os
 contratos seguem as regras de formação de preço:
-
 
 **a)** Um contrato referente ao período completo do mês i ao mês j jamais possui valor inferior ao valor de
 um contrato cuja abrangência está contida entre o período do mês i ao mês j. Por exemplo, o contrato
@@ -82,15 +93,14 @@ um contrato cuja abrangência está contida entre o período do mês i ao mês j
 
 <1; 2; 3; 102.0>.
 
-
 **b)** Um contrato referente ao período completo do mês i ao mês j jamais possui valor superior à soma dos
 valores de contratos que, em conjunto, perfazem o mesmo período do mês i ao mês j. Por exemplo, o
 contrato <1; 1; 3; 108.0> tem obrigatoriamente valor menor ou igual aos valores dos contratos:
-<1; 1; 1; 10.0> + <1; 2; 2; 100.0> + <1; 3; 3; 10.0>, cujo valor total é $120; ou
+<1; 1; 1; 10.0> + <1; 2; 2; 100.0> + <1; 3; 3; 10.0>, cujo valor total é \$120; ou
 
-<1; 1; 1; 10.0> + <1; 2; 3; 102.0>, cujo valor total é $112; ou
+<1; 1; 1; 10.0> + <1; 2; 3; 102.0>, cujo valor total é \$112; ou
 
-<1; 1; 2; 105.0> + <1; 3; 3; 10.0>, cujo valor total é $115.
+<1; 1; 2; 105.0> + <1; 3; 3; 10.0>, cujo valor total é \$115.
 
 ## Entrada de Dados
 
@@ -104,7 +114,7 @@ avaliação, o arquivo de entrada pode conter uma instância de grande porte (n 
 
 ## Exemplo de Entrada de Dados
 
-```
+```text
 3 2 30.0
 1 1 1 10.0
 1 2 2 100.0
@@ -122,7 +132,7 @@ avaliação, o arquivo de entrada pode conter uma instância de grande porte (n 
 
 ## Exemplos de Soluções Viáveis (não necessariamente econômicas)
 
-<1; 1; 3; 108.0> com custo total de $108;
+<1; 1; 3; 108.0> com custo total de \$108;
 
 <1; 1; 1; 10.0> e <2; 2; 3; 60.0> com custo total de $100 = $10 + $30 + $60;
 
@@ -131,39 +141,39 @@ avaliação, o arquivo de entrada pode conter uma instância de grande porte (n 
 ## Atividades da 1a entrega
 
 - [x] **a)** Realizar a leitura do arquivo de entrada em estruturas de dados apropriadas, buscando eficiência não só
-no uso de memória, mas também no tempo de processamento dos algoritmos que farão uso destes dados.
-(1,0 ponto) (Data de entrega: 07/05)
+      no uso de memória, mas também no tempo de processamento dos algoritmos que farão uso destes dados.
+      (1,0 ponto) (Data de entrega: 07/05)
 
 - [x] **b)** Apresentar a complexidade das estruturas utilizadas para armazenar os dados de entrada, fazendo uso
-de notação assintótica e tendo como parâmetros somente a quantidade n de meses e a quantidade m de
-fornecedores. (1,0 ponto) (Data de entrega: 12/05)
+      de notação assintótica e tendo como parâmetros somente a quantidade n de meses e a quantidade m de
+      fornecedores. (1,0 ponto) (Data de entrega: 12/05)
 
 - [x] **c)** Criar uma função eficiente que retorna o contrato individual, referente ao período completo de n meses,
-que possui o menor valor. (1,0 ponto) (Data de entrega: 07/05)
+      que possui o menor valor. (1,0 ponto) (Data de entrega: 07/05)
 
 - [x] **d)** Apresentar a complexidade da função descrita no item anterior, fazendo uso de notação assintótica e
-tendo como parâmetros somente a quantidade n de meses e a quantidade m de fornecedores. (1,0 ponto)
-(Data de entrega: 12/05)
+      tendo como parâmetros somente a quantidade n de meses e a quantidade m de fornecedores. (1,0 ponto)
+      (Data de entrega: 12/05)
 
 - [x] **e)** Criar uma função eficiente que retorna o contrato individual de menor valor do mercado, independente
-do período a que se refere. (1,0 ponto) (Data de entrega: 12/05)
+      do período a que se refere. (1,0 ponto) (Data de entrega: 12/05)
 
 - [x] **f)** Apresentar a complexidade da função descrita no item anterior, fazendo uso de notação assintótica e
-tendo como parâmetros somente a quantidade n de meses e a quantidade m de fornecedores. (1,0 ponto)
-(Data de entrega: 14/05)
+      tendo como parâmetros somente a quantidade n de meses e a quantidade m de fornecedores. (1,0 ponto)
+      (Data de entrega: 14/05)
 
-- [ ] **g)** Criar uma função eficiente que retorna o contrato individual, referente ao período completo de x meses
-(passado como parâmetro, x ≤ n), que possui o menor valor. (1,0 ponto) (Data de entrega: 19/05)
+- [x] **g)** Criar uma função eficiente que retorna o contrato individual, referente ao período completo de x meses
+      (passado como parâmetro, x ≤ n), que possui o menor valor. (1,0 ponto) (Data de entrega: 19/05)
 
-- [ ] **h)** Apresentar a complexidade da função descrita no item anterior, fazendo uso de notação assintótica e
-tendo como parâmetros somente a quantidade n de meses e a quantidade m de fornecedores. (1,0 ponto)
-(Data de entrega: 19/05)
+- [x] **h)** Apresentar a complexidade da função descrita no item anterior, fazendo uso de notação assintótica e
+      tendo como parâmetros somente a quantidade n de meses e a quantidade m de fornecedores. (1,0 ponto)
+      (Data de entrega: 19/05)
 
 - [ ] **i)** Criar um método que sugere quais contratos de energia devem ser contratados para os próximos n
-meses. (1,0 ponto) (Data de entrega: 21/05)
+      meses. (1,0 ponto) (Data de entrega: 21/05)
 
 - [ ] **j)** Apresentar a complexidade da função descrita no item anterior, fazendo uso de notação assintótica e
-tendo como parâmetros somente a quantidade n de meses e a quantidade m de fornecedores. (1,0 ponto)
-(Data de entrega: 21/05)
+      tendo como parâmetros somente a quantidade n de meses e a quantidade m de fornecedores. (1,0 ponto)
+      (Data de entrega: 21/05)
 
 Apresentação e avaliação final da 1a entrega do projeto: 26/05 e 28/05
