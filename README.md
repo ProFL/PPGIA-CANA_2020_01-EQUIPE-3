@@ -130,39 +130,39 @@ avaliação, o arquivo de entrada pode conter uma instância de grande porte (n 
 
 ## Atividades da 1a entrega
 
-~**a)** Realizar a leitura do arquivo de entrada em estruturas de dados apropriadas, buscando eficiência não só
+- [x] **a)** Realizar a leitura do arquivo de entrada em estruturas de dados apropriadas, buscando eficiência não só
 no uso de memória, mas também no tempo de processamento dos algoritmos que farão uso destes dados.
 (1,0 ponto) (Data de entrega: 07/05)
 
-**b)** Apresentar a complexidade das estruturas utilizadas para armazenar os dados de entrada, fazendo uso
+- [x] **b)** Apresentar a complexidade das estruturas utilizadas para armazenar os dados de entrada, fazendo uso
 de notação assintótica e tendo como parâmetros somente a quantidade n de meses e a quantidade m de
 fornecedores. (1,0 ponto) (Data de entrega: 12/05)
 
-**c)** Criar uma função eficiente que retorna o contrato individual, referente ao período completo de n meses,
+- [x] **c)** Criar uma função eficiente que retorna o contrato individual, referente ao período completo de n meses,
 que possui o menor valor. (1,0 ponto) (Data de entrega: 07/05)
 
-**d)** Apresentar a complexidade da função descrita no item anterior, fazendo uso de notação assintótica e
+- [x] **d)** Apresentar a complexidade da função descrita no item anterior, fazendo uso de notação assintótica e
 tendo como parâmetros somente a quantidade n de meses e a quantidade m de fornecedores. (1,0 ponto)
 (Data de entrega: 12/05)
 
-**e)** Criar uma função eficiente que retorna o contrato individual de menor valor do mercado, independente
+- [x] **e)** Criar uma função eficiente que retorna o contrato individual de menor valor do mercado, independente
 do período a que se refere. (1,0 ponto) (Data de entrega: 12/05)
 
-**f)** Apresentar a complexidade da função descrita no item anterior, fazendo uso de notação assintótica e
+- [x] **f)** Apresentar a complexidade da função descrita no item anterior, fazendo uso de notação assintótica e
 tendo como parâmetros somente a quantidade n de meses e a quantidade m de fornecedores. (1,0 ponto)
-(Data de entrega: 14/05)~
+(Data de entrega: 14/05)
 
-**g)** Criar uma função eficiente que retorna o contrato individual, referente ao período completo de x meses
+- [ ] **g)** Criar uma função eficiente que retorna o contrato individual, referente ao período completo de x meses
 (passado como parâmetro, x ≤ n), que possui o menor valor. (1,0 ponto) (Data de entrega: 19/05)
 
-**h)** Apresentar a complexidade da função descrita no item anterior, fazendo uso de notação assintótica e
+- [ ] **h)** Apresentar a complexidade da função descrita no item anterior, fazendo uso de notação assintótica e
 tendo como parâmetros somente a quantidade n de meses e a quantidade m de fornecedores. (1,0 ponto)
 (Data de entrega: 19/05)
 
-**i)** Criar um método que sugere quais contratos de energia devem ser contratados para os próximos n
+- [ ] **i)** Criar um método que sugere quais contratos de energia devem ser contratados para os próximos n
 meses. (1,0 ponto) (Data de entrega: 21/05)
 
-**j)** Apresentar a complexidade da função descrita no item anterior, fazendo uso de notação assintótica e
+- [ ] **j)** Apresentar a complexidade da função descrita no item anterior, fazendo uso de notação assintótica e
 tendo como parâmetros somente a quantidade n de meses e a quantidade m de fornecedores. (1,0 ponto)
 (Data de entrega: 21/05)
 
