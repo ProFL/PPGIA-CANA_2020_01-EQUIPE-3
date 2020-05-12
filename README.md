@@ -130,7 +130,7 @@ avaliação, o arquivo de entrada pode conter uma instância de grande porte (n 
 
 ## Atividades da 1a entrega
 
-**a)** Realizar a leitura do arquivo de entrada em estruturas de dados apropriadas, buscando eficiência não só
+~**a)** Realizar a leitura do arquivo de entrada em estruturas de dados apropriadas, buscando eficiência não só
 no uso de memória, mas também no tempo de processamento dos algoritmos que farão uso destes dados.
 (1,0 ponto) (Data de entrega: 07/05)
 
@@ -150,7 +150,7 @@ do período a que se refere. (1,0 ponto) (Data de entrega: 12/05)
 
 **f)** Apresentar a complexidade da função descrita no item anterior, fazendo uso de notação assintótica e
 tendo como parâmetros somente a quantidade n de meses e a quantidade m de fornecedores. (1,0 ponto)
-(Data de entrega: 14/05)
+(Data de entrega: 14/05)~
 
 **g)** Criar uma função eficiente que retorna o contrato individual, referente ao período completo de x meses
 (passado como parâmetro, x ≤ n), que possui o menor valor. (1,0 ponto) (Data de entrega: 19/05)
