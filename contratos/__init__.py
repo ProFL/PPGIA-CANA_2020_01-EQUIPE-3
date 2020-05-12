@@ -9,6 +9,9 @@ class Contrato:
     mes_fim: int
     valor: float
 
+    def __repr__(self):
+        return f'Contrato(fornecedor={self.fornecedor + 1}, mês inicial={self.mes_inicio + 1}, mês final={self.mes_fim + 1}, valor={self.valor:.2f})'
+
 
 class Contratos:
     def __init__(self, array: List[List[List[float]]], taxa: float):
